@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-board {
+    width: 70%;
+    height: 80vh;
+    border-bottom: 10px solid green;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    background: linear-gradient(#E0F6FF, #87CEEB);
+}
+
+.cloud {
+    width: 140px;
+    position: absolute;
+    animation: cloud-animation 20s infinite linear;
+    margin-top: 5%;
+}
+
+@keyframes cloud-animation {
+    from {
+        right: -140px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+.cloud1 {
+    width: 200px;
+    position: absolute;
+    animation: cloud-animation1 24s infinite linear;
+    margin-top: -2%;
+}
+
+@keyframes cloud-animation1 {
+    from {
+        right: -200px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+.cloud2 {
+    width: 120px;
+    position: absolute;
+    animation: cloud-animation2 22s infinite linear;
+    margin-top: 2%;
+
+}
+
+@keyframes cloud-animation2 {
+    from {
+        right: -400px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+.cloud3 {
+    width: 210px;
+    position: absolute;
+    animation: cloud-animation3 26s infinite linear;
+    margin-top: 2%;
+
+}
+
+@keyframes cloud-animation3 {
+    from {
+        right: -210px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+.enemy {
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    animation: enemy-animation 2.5s infinite linear;
+}
+
+.luigi {
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    left: 16px;
+}
+
+.jump {
+    animation: jump 600ms ease-out;
+}
+
+@keyframes enemy-animation {
+    from {
+        right: -50%;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0;
+        
+    }
+
+    40% {
+        bottom: 90px;
+        
+    }
+
+    50% {
+        bottom: 90px;
+        
+    }
+
+    60% {
+        bottom: 90px;
+        
+    }
+
+    100% {
+        bottom: 0px;
+        
+    }
+}

@@ -1,0 +1,18 @@
+.contador {
+    color: #000;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contador h2,
+.contador div {
+    margin-top: 1rem;
+    font-family: sans-serif;
+    font-size: 1.6rem;
+}
+
+.contador div {
+    margin: 1.1rem 0 0 .5%;
+}

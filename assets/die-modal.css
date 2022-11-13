@@ -1,0 +1,52 @@
+.die-modal {
+    position: relative;
+    z-index: 999;
+    width: 25%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgba(0, 0, 0, 0.158);
+    text-align: center;
+}
+
+.die-modal {
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.die-alert-on {
+    visibility: visible;
+    pointer-events: all;
+    animation: alert .4s;
+}
+
+@keyframes alert {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 20px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.die-alert {
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #010101;
+}
+.reload {
+    padding: 3% 12%;
+    color: #fff;
+    background: #19f;
+    border: none;
+}
+
+.reload:hover {
+    background: #15f;
+    cursor: pointer;
+}
