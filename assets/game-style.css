@@ -111,14 +111,36 @@ section {
 .luigi {
     position: absolute;
     bottom: 0;
-    width: 50px;
-    left: 16px;
+    width: 6%;
+    left: 1.8rem;
+}
+
+.luigi-die {
+    position: absolute;
+    bottom: -50%;
+    width: 8.5%;
+    left: 1rem;
+    visibility: hidden;
 }
 
 .jump {
     animation: jump 600ms ease-out;
 }
 
+@keyframes luigi-die {
+    0%{
+        bottom: 0%;
+    }
+
+    50% {
+        bottom: 15%;
+    }
+
+    100% {
+        bottom: -50%;
+    }
+    
+}
 @keyframes enemy-animation {
     from {
         right: -50%;

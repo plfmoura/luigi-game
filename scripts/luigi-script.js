@@ -1,5 +1,6 @@
 //personagens
 const luigi = document.querySelector('.luigi');
+const luigiDie = document.querySelector('.luigi-die');
 const enemy = document.querySelector('.enemy');
 const bowser = document.querySelector('.enemy-bowser');
 const bowserWin = document.querySelector('.enemy-bowser-win');
@@ -9,12 +10,14 @@ const dieText = document.querySelector('.die-alert');
 //Hud game
 const startBtn = document.querySelector('.start-btn');
 const score = document.querySelector('.score');
+const contador = document.querySelector('.contador');
 const textoInicio = document.querySelector('.txt-inicio');
 
 enemy.style.display = 'none';
 
 startBtn.addEventListener('click', () => {
-    //tirar o botão quando iniciar o jogo.
+    //tirar o botão e colocando contador quando iniciar o jogo.
+    contador.style.visibility = 'visible';
     startBtn.style.display = 'none';
     //pontuação
     var pulos = 1;
@@ -59,12 +62,10 @@ startBtn.addEventListener('click', () => {
             enemy.style.animation = 'none';
             enemy.style.left = `${enemyPosition}px`;
     
-            luigi.style.animation = 'none';
-            luigi.style.left = `${luigiPosition}px`;
+            luigi.style.visibility = 'hidden';
     
-            luigi.src = 'assets/die.png';
-            luigi.style.width = '70px'
-            luigi.style.marginLeft = '12px'
+            luigiDie.style.visibility = 'visible'
+            luigiDie.style.animation = 'luigi-die 2s ease-out'
 
             bowser.style.visibility = 'hidden';
             bowserWin.classList.add('bowser-visible');

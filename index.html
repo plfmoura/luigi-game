@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/die-modal.css">
     <link rel="stylesheet" href="assets/bowser.css">
     <link rel="stylesheet" href="assets/hud.css">
+    <link rel="stylesheet" href="assets/dark-mode.css">
     <title>Luigi Jump</title>
 </head>
 <body>
@@ -18,28 +19,32 @@
             </div>
             <div class="txt-inicio">
                 <h1>LUIGI JUMP</h1>
+                <button class="start-btn">Iniciar</button>
                 <h2 class="chamada-txt" >Clique em Iniciar</h2>
             </div>
+
             <img src="assets/enemy.gif" class="enemy">
             <img src="assets/luigi.gif" class="luigi">
+            <img src="assets/die.gif" class="luigi-die">
             <img src="assets/bowser-enemy.gif" class="enemy-bowser">
             <img src="assets/bowser-enemy2.gif" class="enemy-bowser-win">
-            <img src="assets/cloud1.png" class="cl cloud1">        
-            <img src="assets/cloud1.png" class="cl cloud3">
-            <img src="assets/cloud.png" class="cl cloud2">
-            <img src="assets/cloud.png" class="cl cloud">
+            <img src="assets/cloud1.png" class="nuvem cloud1">        
+            <img src="assets/cloud1.png" class="nuvem cloud3">
+            <img src="assets/cloud.png" class="nuvem cloud2">
+            <img src="assets/cloud.png" class="nuvem cloud">
         </div>
         
         <div class="die-modal">
-            <h2 class="die-alert">Você Perdeu! Não obteve pontos.</h2>
+            <h2 class="die-alert">Você Perdeu! <br>Não obteve pontos.</h2>
             <button class="reload">Recomeçar</button>
         </div> 
     </section>
     <div class="start-container">
-        <button class="start-btn">Iniciar</button>
+        <button class="dark-mode-btn">Modo escuro</button>
     </div>
 
     <script src="scripts/luigi-script.js" defer></script>
     <script src="scripts/page.js" defer></script>
+    <script src="scripts/dark-mode.js" defer></script>
 </body>
 </html>

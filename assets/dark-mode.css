@@ -1,0 +1,20 @@
+.body-dm {
+    background-color: rgb(15, 14, 14);
+}
+
+.contador-escuro {
+    color: #fff;
+}
+
+.ceu-dm {
+    background: linear-gradient(#462485, #081c24);
+}
+
+.dark-mode-btn {
+    padding: 1rem 2rem;
+    background-color: #081c24;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
