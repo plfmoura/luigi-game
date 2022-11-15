@@ -1,6 +1,8 @@
 //personagens
 const luigi = document.querySelector('.luigi');
 const enemy = document.querySelector('.enemy');
+const bowser = document.querySelector('.enemy-bowser');
+const bowserWin = document.querySelector('.enemy-bowser-win');
 //modal
 const modal = document.querySelector('.die-modal');
 const dieText = document.querySelector('.die-alert');
@@ -63,6 +65,10 @@ startBtn.addEventListener('click', () => {
             luigi.src = 'assets/die.png';
             luigi.style.width = '70px'
             luigi.style.marginLeft = '12px'
+
+            bowser.style.visibility = 'hidden';
+            bowserWin.classList.add('bowser-visible');
+            bowserWin.style.animation = 'bowser-win 3s normal'
     
             clearInterval('loop');
             
@@ -80,6 +86,6 @@ startBtn.addEventListener('click', () => {
             var space = codigoTecla == 32;
             if(space){
                 jump();
-            }});
-
+            }
+        });
 });
