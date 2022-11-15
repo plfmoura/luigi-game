@@ -1,11 +1,15 @@
-<h1> Luigi Jump :smile:</h1>
-<h2>Pedro Moura - 2022</h2>
-<div>
-<img src="assets/img/jogo-rolando.gif" width="70%">
+<div align="center">
+  <h1> LUIGI JUMP :smile:</h1>
+  <h2>Pedro Moura - 2022</h2>
+   <p>(Maybe... GIF loading)</p>
+  <div>
+    <img src="assets/img/jogo-rolando.gif" width="70%">
+  </div>
 </div>
-(GIF loading... wait)
 
-* New Features 
+ New Features 
+ ============
+ 
 - Score Counter
 - Bowser Sprites and Animations,
 - Luigi Die Sprite and Animations,
