@@ -19,5 +19,13 @@
 - Modal after Die,
 - And others things...
 
+Comming soon
+=============
+- Choose between Mario or Luigi,
+- New monsters,
+- Sound Effects,
+- Life chances,
+- And other ideais lol...
+
 I'm open to find contributors for improve this project :star:
 ========================================================
