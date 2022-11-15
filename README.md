@@ -1,8 +1,9 @@
 <h1> Luigi Jump :smile:</h1>
 <h2>Pedro Moura - 2022</h2>
 <div>
-<img src="assets/img/jogo-rolando.png" width="70%">
+<img src="assets/img/jogo-rolando.gif" width="70%">
 </div>
+(GIF loading... wait)
 
 * New Features 
 - Score Counter
