@@ -10,26 +10,32 @@
     <title>Luigi Jump</title>
 </head>
 <body>
-
-    <div class="game-board">
-        <div class="contador">
-            <h2>Pontuação:</h2><div class="score">0000</div>
+    <section>
+        <div class="game-board">
+            <div class="contador">
+                <h2>Pontuação:</h2><div class="score">0</div>
+            </div>
+            <div class="txt-inicio">
+                <h1>LUIGI JUMP</h1>
+                <h2 class="chamada-txt" >Clique em Iniciar</h2>
+            </div>
+            <img src="assets/enemy.gif" class="enemy">
+            <img src="assets/luigi.gif" class="luigi">
+            <img src="assets/cloud1.png" class="cloud1">        
+            <img src="assets/cloud1.png" class="cloud3">
+            <img src="assets/cloud.png" class="cloud2">
+            <img src="assets/cloud.png" class="cloud">
         </div>
-
-        <img src="assets/enemy.gif" class="enemy">
-        <img src="assets/luigi.gif" class="luigi">
         
-        <img src="assets/cloud1.png" class="cloud1">        
-        <img src="assets/cloud1.png" class="cloud3">
-        <img src="assets/cloud.png" class="cloud2">
-        <img src="assets/cloud.png" class="cloud">
+        <div class="die-modal">
+            <h2 class="die-alert">Você Perdeu! Não obteve pontos.</h2>
+            <button class="reload">Recomeçar</button>
+        </div> 
+    </section>
+    <div class="start-container">
+        <button class="start-btn">Iniciar</button>
+    </div>
 
-    </div>   
-
-    <div class="die-modal">
-        <h2 class="die-alert">Você Perdeu!</h2>
-        <button class="reload">Recomeçar</button>
-    </div> 
     <script src="scripts/luigi-script.js" defer></script>
     <script src="scripts/page.js" defer></script>
 </body>
