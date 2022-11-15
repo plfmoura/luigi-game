@@ -1,7 +1,7 @@
 <div align="center">
   <h1> LUIGI JUMP :smile:</h1>
   <h2>Pedro Moura - 2022</h2>
-   <p>(Maybe... GIF loading)</p>
+   <p>(maybe the GIF is loading)</p>
   <div>
     <img src="assets/img/jogo-rolando.gif" width="70%">
   </div>
