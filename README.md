@@ -5,6 +5,7 @@
   <div>
     <img src="assets/img/jogo-rolando.gif" width="70%">
   </div>
+  <p>Press Space to Jump</p>
 </div>
 
  New Features 
