@@ -17,6 +17,7 @@
 - Dark Mode,
 - Game Title, button to start,
 - Modal after Die,
+- Mobile Responsive
 - And others things...
 
 Comming soon
