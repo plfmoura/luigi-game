@@ -1,6 +1,31 @@
-<h1 align="center"> Luigi Jump (Game)</h1>
 <div align="center">
-<img src="https://files.fm/thumb_show.php?i=qtp4cpdsh" width="20%">
+  <h1> LUIGI JUMP :smile:</h1>
+  <h2>Pedro Moura - 2022</h2>
+   <p>(maybe the GIF is loading)</p>
+  <div>
+    <img src="assets/img/jogo-rolando.gif" width="70%">
+  </div>
+  <p>Press Space to Jump</p>
 </div>
 
-<h3 align="center"> Pedro Moura - 2022</h3>
+ New Features 
+ ============
+ 
+- Score Counter
+- Bowser Sprites and Animations,
+- Luigi Die Sprite and Animations,
+- Dark Mode,
+- Game Title, button to start,
+- Modal after Die,
+- And others things...
+
+Comming soon
+=============
+- Choose between Mario or Luigi,
+- New monsters,
+- Sound Effects,
+- Life chances,
+- And other ideais lol...
+
+I'm open to find contributors for improve this project :star:
+========================================================
