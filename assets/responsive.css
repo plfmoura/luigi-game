@@ -1,0 +1,238 @@
+@media (max-width: 720px) {
+    .game-board {
+        width: 80%;
+    }
+
+    .enemy {
+        width: 9%;
+    }
+
+    .luigi {
+        width: 9%;
+    }
+    
+    .jump {
+        animation: jump 850ms ease-out;
+    }
+
+    .luigi-die {
+        width: 12%;
+    }
+
+    .enemy-bowser {
+        width: 30%;
+    }
+
+    .enemy-bowser-win {
+        left: 15%;
+        width: 60%;
+        bottom: 15%;
+    }
+    @keyframes bowser-win {
+        0%,100% {
+            left: 15%;
+            bottom: 15%;
+            -moz-transform: scaleX(-1);
+            -o-transform: scaleX(-1);
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
+    
+        50% {
+            left: -38%;
+            bottom: -20%;
+        }
+    
+        90% {
+            left: -30%;
+            bottom: -15%;
+        }
+    }
+
+    .nuvem {
+        width: 25%;
+        bottom: 70%;
+    }
+
+    .die-modal {
+        width: 40%;
+        height: 30%;
+        background: rgba(255, 255, 255, 0.836);
+    }
+}
+
+@media (max-width: 575px) {
+    .game-board {
+        width: 80%;
+    }
+
+    .enemy {
+        width: 9%;
+    }
+
+    .luigi {
+        width: 10%;
+    }
+    
+    .jump {
+        animation: jump 800ms ease-out;
+    }
+
+    .luigi-die {
+        width: 14%;
+    }
+
+    .enemy-bowser {
+        width: 35%;
+    }
+
+    .enemy-bowser-win {
+        width: 80%;
+        bottom: 60%;
+    }
+    @keyframes bowser-win {
+        0%,100% {
+            left: 40%;
+            bottom: 60%;
+            -moz-transform: scaleX(-1);
+            -o-transform: scaleX(-1);
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
+    
+        50% {
+            left: -5%;
+            bottom: 30%;
+        }
+    
+        90% {
+            left: -9%;
+            bottom: 40%;
+        }
+    }
+
+    .nuvem {
+        width: 25%;
+        bottom: 70%;
+    }
+
+    .die-modal {
+        width: 40%;
+        height: 30%;
+        background: rgba(255, 255, 255, 0.836);
+    }
+}
+
+@media (max-width: 420px) {
+    section {
+        margin-top: -50%;
+    }
+
+    .game-board {
+        width: 90%;
+        height: 60%;
+    }
+
+    .txt-inicio {
+        height: 60%;
+    }
+    .txt-inicio h1 {
+        margin-bottom: 5rem;
+        font-size: 2.5rem;
+    }
+
+    .enemy {
+        width: 9%;
+    }
+
+    .luigi {
+        width: 10%;
+    }
+    
+    .jump {
+        animation: jump 850ms ease-out;
+    }
+
+    @keyframes jump {
+        0% {
+            bottom: 0;
+            
+        }
+    
+        40% {
+            bottom: 70px;
+            
+        }
+    
+        50% {
+            bottom: 70px;
+            
+        }
+    
+        60% {
+            bottom: 70px;
+            
+        }
+    
+        100% {
+            bottom: 0px;
+            
+        }
+    }
+
+    .luigi-die {
+        width: 14%;
+    }
+
+    .enemy-bowser {
+        width: 35%;
+    }
+
+    .enemy-bowser-win {
+        width: 80%;
+        bottom: 40%;
+    }
+    @keyframes bowser-win {
+        0%,100% {
+            left: 40%;
+            bottom: 40%;
+            -moz-transform: scaleX(-1);
+            -o-transform: scaleX(-1);
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
+    
+        50% {
+            left: -5%;
+            bottom: 2%;
+        }
+    
+        90% {
+            left: -10%;
+            bottom: 10%;
+        }
+    }
+
+    .nuvem {
+        width: 25%;
+        bottom: 70%;
+    }
+
+    .die-modal {
+        width: 50%;
+        height: 20%;
+        background: rgba(255, 255, 255, 0.836);
+    }
+
+    .start-container {
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .start-container button {
+        margin: .2rem ;
+    }
+
+}

@@ -69,7 +69,8 @@
     height: 5vh;
     margin-top: 1rem;
     display: flex;
-    justify-content: center;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
 }
 
 .start-btn {
@@ -89,6 +90,19 @@
 .start-btn:hover {
     background-color: rgb(3, 90, 25);
     animation: pulsar 2s infinite;
+}
+
+.jump-btn {
+    padding: 1rem 3rem;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 .events-none {

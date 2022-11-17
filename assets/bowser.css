@@ -1,10 +1,13 @@
+.bowser-animate {
+}
+
 .enemy-bowser {
     width: 20%;
     z-index: 500;
     position: relative;
     left: 80%;
-    animation: bowser 4s infinite;
     visibility: visible;
+    animation: bowser 3s infinite;
 }
 
 @keyframes bowser {
@@ -21,6 +24,38 @@
     80% {
         bottom: -5%;
     }
+}
+
+@keyframes bowser-retreat {
+    0%,100% {
+        left: 75%;
+        bottom: 0%;
+    }
+
+    50% {
+        left: 150%;
+        bottom: 10%;
+    }
+
+}
+
+@keyframes bowser-attack {
+    0%,100% {
+        left: 75%;
+        bottom: 10%;
+    }
+
+    50% {
+        left: -100%;
+        bottom: -18%;
+        transform: scale(1.1);
+    }
+
+    60% {
+        left: 20%;
+        bottom: -10%
+    }
+
 }
 
 .enemy-bowser-win {

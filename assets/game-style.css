@@ -71,7 +71,6 @@ section {
     position: absolute;
     animation: cloud-animation2 22s infinite linear;
     margin-top: 2%;
-
 }
 
 @keyframes cloud-animation2 {
