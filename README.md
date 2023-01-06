@@ -27,6 +27,3 @@ Comming soon
 - Sound Effects,
 - Life chances,
 - And other ideais lol...
-
-I'm open to find contributors for improve this project :star:
-========================================================
