@@ -16,17 +16,27 @@ const highScore = document.querySelector('.high-score')
 const textoInicio = document.querySelector('.txt-inicio');
 const jumpBtn = document.querySelector('.jump-btn');
 
-
-let getScore = localStorage.getItem('your-score')
-highScore.innerHTML = getScore
-
 enemy.style.display = 'none';
 
-const highScores = (score) => {
+// para renderizar a maior pontuação da sessão
+const showHighScore = () => {
+    let getScore = localStorage.getItem('your-score')
+    if(!getScore){
+        highScore.innerHTML = 0
+    }else {
+        highScore.innerHTML = getScore
+    }
+}
+
+showHighScore()
+
+const setHighScore = (score) => {
     localStorage.setItem('your-score', score);
 }
 
+// contador da pontuação 
 let count = 0
+
 startBtn.addEventListener('click', () => {
     //tirar o botão e colocando contador quando iniciar o jogo.
     contador.style.visibility = 'visible';
@@ -36,7 +46,8 @@ startBtn.addEventListener('click', () => {
     textoInicio.classList.add('txt-none');
     //voltar visibilidade do inimigo quando começar jogo
     enemy.style.display = 'block';
-    //pulo
+    
+    //ações do jogo
     const jump = () => {
         luigi.classList.add('jump');
 
@@ -48,14 +59,13 @@ startBtn.addEventListener('click', () => {
         if (luigiDie.style.visibility != 'visible') {
             count++
             score.innerHTML = count
-            count != 0 ? dieText.innerHTML = `Você perdeu! <br>Pontuação: ${count}` : "" 
+            count != 0 ? dieText.innerHTML = `Você perdeu! <br>Pontuação: ${count}` : ""
         } else {
             return
         }
         return count
     }
 
-    //jogo em si
     const loop = setInterval(() => {
         const enemyPosition = enemy.offsetLeft;
         const luigiPosition = +window.getComputedStyle(luigi).bottom.replace('px', '');
@@ -67,8 +77,8 @@ startBtn.addEventListener('click', () => {
 
             let getScore = localStorage.getItem('your-score')
 
-            if(getScore < count) {
-                highScores(count)
+            if (getScore < count) {
+                setHighScore(count)
                 dieText.innerHTML = `NOVO RECORDE! <br>Pontuação: ${count}`
             }
 
